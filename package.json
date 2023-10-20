@@ -1,0 +1,24 @@
+{
+  "name": "codex-entry-project",
+  "description": "buttons",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "deploy": "npm run build &&  <deploy CLI options> && ./git",
+    "build": "tsc && vite build --config buildconfig.js && touch dist/_redirects && echo '/* /index.html 200' >> dist/_redirects",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/css": "^0.0.33",
+    "@vitejs/plugin-legacy": "^4.0.2",
+    "terser": "^5.16.8",
+    "typescript": "^5.2.2",
+    "vite": "^4.2.1",
+    "vite-plugin-compression": "^0.5.1"
+  },
+  "dependencies": {
+    "@codexteam/icons": "^0.3.0",
+    "cradova": "^3.2.1"
+  }
+}

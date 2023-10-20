@@ -1,0 +1,90 @@
+:root {
+  ---primary: #369fff;
+  ---hover: #0274dc;
+  ---secondary: #30343b;
+  ---danger: #d32a2a;
+  ---dark: #242527;
+  ---light: #ffffff;
+}
+
+body {
+  background-color: var(---light);
+  color: var(---dark);
+}
+
+body.dark {
+  background-color: var(---dark);
+  color: var(---light);
+}
+
+/* BUTTONS STYLES */
+
+.button {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.button.Small {
+  padding: 6px 12px;
+}
+/* sizes */
+.button.Medium {
+  padding: 10px 20px;
+}
+
+.button.Large {
+  padding: 14px 28px;
+}
+
+/* Style */
+.button.primary {
+  background-color: var(---primary);
+  color: #ffffff;
+  border-radius: 9px;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+  pointer-events: all;
+  font-weight: 700;
+}
+
+.button.secondary {
+  background-color: var(---secondary);
+  color: #ffffff;
+}
+
+.button.danger {
+  background-color: var(---danger);
+  color: #ffffff;
+}
+
+/* Type */
+.button.Outline {
+  background-color: transparent;
+  border: 1px solid var(---primary);
+  color: var(---primary);
+}
+
+.button.Soft {
+  background-color: #e6f3ff;
+}
+
+.button.Ghost {
+  background-color: transparent;
+  color: var(---primary);
+}
+
+/* State */
+.button.state-hover:hover {
+  opacity: 0.7;
+}
+
+.button.state-disabled {
+  opacity: 0.5;
+  cursor: none;
+  background-color: #30343b2a;
+  color: #94979a;
+}
