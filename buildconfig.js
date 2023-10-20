@@ -7,10 +7,6 @@ export default defineConfig({
     legacy({
       targets: ["defaults", ">0.016%", "chromeAndroid 44"],
     }),
-    viteCompression(),
+    // viteCompression(),
   ],
-  build: {
-    cssCodeSplit: true,
-    assetsInlineLimit: 0,
-  },
 });
