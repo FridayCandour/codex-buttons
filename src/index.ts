@@ -5,7 +5,7 @@ const template = function () {
   return div({ id: "CODEX" }, header, Wrapper, footer({}));
 };
 
-const App = new Screen({ name: "Codex Buttons -  sample", template });
+// const App = new Screen({ name: "Codex Buttons -  sample", template });
 
 //? routing
 // Router.BrowserRoutes({
