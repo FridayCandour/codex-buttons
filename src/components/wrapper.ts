@@ -1,16 +1,5 @@
-import _, { Ref, div, p, svg } from "cradova";
-import {
-  IconCollapse,
-  IconDelimiter,
-  IconGlobe,
-  IconH1,
-  IconLink,
-  IconLoader,
-  IconPlus,
-  IconSave,
-  IconSearch,
-  IconStretch,
-} from "@codexteam/icons";
+import _, { Ref, div, p } from "cradova";
+import { IconLink, IconLoader, IconPlus, IconSearch } from "@codexteam/icons";
 import { Button } from "./button";
 
 /**
@@ -54,7 +43,7 @@ export const Wrapper = new Ref(function (params: {}) {
     ),
     p("Icon Type"),
     div(
-      { display: "flex" },
+      { display: "flex", flexWrap: "wrap" },
       Button({ Icon_Type: "None", Icons: [IconPlus] }),
       Button({ Icon_Type: "Leading", Icons: [IconPlus] }),
       Button({ Icon_Type: "Trailing", Icons: [IconLink] }),
