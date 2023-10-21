@@ -8,17 +8,17 @@ const template = function () {
 const App = new Screen({ name: "Codex Buttons -  sample", template });
 
 //? routing
-Router.BrowserRoutes({
-  "/": App,
-  "/404": App, //? makes as none implemented routes naviagates to "/"
-});
+// Router.BrowserRoutes({
+//   "/": App,
+//   "/404": App, //? makes as none implemented routes naviagates to "/"
+// });
 
-// document.body.appendChild(template());
+document.body.appendChild(template());
 Router.onPageEvent(() => {
   //?  send analytics here
 });
 
-// Router.addErrorHandler((error: unknown) => {
-//   console.log(error);
-//   //? send errors here
-// });
+Router.addErrorHandler((error: unknown) => {
+  console.log(error);
+  //? send errors here
+});
