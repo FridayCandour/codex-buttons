@@ -93,9 +93,5 @@ export const Button = (init: ButtonProps = {} as ButtonProps) => {
     }
   }
 
-  /*
-  ? className.join(" ") is faster than 
-  ? className = className + " another class" which creates a new object each time
-  */
   return button(...children, { className: className.join(" ") });
 };
