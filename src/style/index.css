@@ -43,7 +43,7 @@ body.dark {
 .button.primary {
   background-color: var(---primary);
   color: #ffffff;
-  border-radius: 9px;
+  border-radius: 8px;
   border: none;
   margin: 4px;
   cursor: pointer;
