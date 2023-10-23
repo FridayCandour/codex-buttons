@@ -9,7 +9,7 @@ export const header = new Ref(function () {
   // console.log(DarkMode);
   return div(
     _(
-      ".button.primary",
+      ".button.primary.Outline",
       {
         onmount() {
           // send metrics
@@ -24,7 +24,6 @@ export const header = new Ref(function () {
         },
         style: {
           width: "fit-content",
-          background: DarkMode ? "var(---secondary)" : "var(---primary)",
         },
       },
       DarkMode ? "Change to light mode" : "Change to dark mode"

@@ -43,7 +43,6 @@ export const Button = (init: ButtonProps = {} as ButtonProps) => {
         className.push("state-hover");
         break;
       default:
-        className.push("default");
         break;
     }
     // ? setting icon state

@@ -1,5 +1,13 @@
 import _, { Ref, div, p } from "cradova";
-import { IconLink, IconLoader, IconPlus, IconSearch } from "@codexteam/icons";
+import {
+  IconBold,
+  IconLink,
+  IconLoader,
+  IconPlus,
+  IconSave,
+  IconSearch,
+  IconTrash,
+} from "@codexteam/icons";
 import { Button } from "./button";
 
 /**
@@ -22,7 +30,7 @@ export const Wrapper = new Ref(function (params: {}) {
     ),
     p("Sizes"),
     div(
-      { display: "flex" },
+      { display: "inline-flex", alignItems: "center" },
       Button({ Size: "Small" }),
       Button({ Size: "Medium" }),
       Button({ Size: "Large" })
@@ -53,6 +61,38 @@ export const Wrapper = new Ref(function (params: {}) {
         Icon_Type: "Trailing",
         text: "Hold tight while we check",
         Icons: [IconLoader],
+      })
+    ),
+    p("Style with icons"),
+    div(
+      { display: "flex" },
+      Button({ Style: "Primary", Icon_Type: "Leading", Icons: [IconPlus] }),
+      Button({ Style: "Secondary", Icon_Type: "Leading", Icons: [IconPlus] }),
+      Button({ Style: "Danger", Icon_Type: "Leading", Icons: [IconPlus] })
+    ),
+    p("Outline type with icons"),
+    div(
+      { display: "flex" },
+      Button({
+        Type: "Outline",
+        Style: "Primary",
+        Icon_Type: "Trailing",
+        text: "Add Todo",
+        Icons: [IconSave],
+      }),
+      Button({
+        Type: "Outline",
+        Style: "Danger",
+        Icon_Type: "Trailing",
+        text: "Delete",
+        Icons: [IconTrash],
+      }),
+      Button({
+        Type: "Outline",
+        Style: "Secondary",
+        Icon_Type: "Trailing",
+        Icons: [IconBold],
+        text: "Bold",
       })
     )
   );
